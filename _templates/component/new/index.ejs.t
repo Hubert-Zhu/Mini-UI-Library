@@ -4,7 +4,7 @@ to: src/components/<%= name %>/index.js
 
 import React from 'react'
 import PropTypes from 'prop-types';
-import StyledAvatar from "./style"
+import Styled<%= name %> from "./style"
 
 
 function <%= name %>({children, ...rest}) {
@@ -15,8 +15,8 @@ function <%= name %>({children, ...rest}) {
     )
 }
 
-Avatar.propTypes = {
+<%= name %>.propTypes = {
    children: PropTypes.any
 }
 
-export default Avatar
+export default <%= name %>
