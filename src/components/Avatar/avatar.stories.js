@@ -13,7 +13,7 @@ export default {
 };
 
 export const Default = () => {
-    return <Avatar />
+    return <Avatar src={face1} />
 }
 
 export const Sizes = () => {
