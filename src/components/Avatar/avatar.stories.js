@@ -8,7 +8,7 @@ import "../../story.css"
 
 
 export default {
-    title: "Avatar",
+    title: "UI Components/Avatar",
     component: Avatar,
 };
 

@@ -2,7 +2,7 @@
 to: src/components/<%= name %>/style.js
 ---
 
-import styled from "style-components"
+import styled from "styled-components"
 
 const Style<%= name %> = styled.div``;
 

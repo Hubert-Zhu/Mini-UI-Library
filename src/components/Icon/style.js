@@ -1,5 +1,15 @@
-import styled from "style-components"
+import styled from "styled-components";
 
-const StyleIcon = styled.div``;
+const StyleIcon = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-export default StyleIcon
+  svg,
+  svg * {
+    ${({ color }) => (color ? `fill: ${color}` : "")};
+    ${({ opacity }) => (opacity ? `opacity: ${opacity}` : "")}
+  }
+`;
+
+export default StyleIcon;
