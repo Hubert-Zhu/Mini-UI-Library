@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import StyledAvatar from "./style"
+import StyledIcon from "./style"
 
 
 function Icon({children, ...rest}) {
@@ -11,8 +11,8 @@ function Icon({children, ...rest}) {
     )
 }
 
-Avatar.propTypes = {
+Icon.propTypes = {
    children: PropTypes.any
 }
 
-export default Avatar
+export default Icon

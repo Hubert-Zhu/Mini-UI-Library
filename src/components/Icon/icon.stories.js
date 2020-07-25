@@ -2,8 +2,8 @@ import React from "react";
 import Icon from ".";
 
 export default {
-    title: "Icon"
+    title: "Icon",
     component: "Icon"
 };
 
-export const default = () => <Icon>默认</Icon>
+export const Default = () => <Icon>默认</Icon>gu
