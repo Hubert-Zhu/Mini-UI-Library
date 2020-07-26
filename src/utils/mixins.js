@@ -1,0 +1,9 @@
+import { css } from "styled-components";
+
+export const circle = (color, size = "8px") => css`
+    position: absolute;
+    width: ${size};
+    height: ${size};
+    border-radius: 50%;
+    background-color: ${color};
+`;

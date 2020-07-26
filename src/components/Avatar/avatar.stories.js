@@ -4,7 +4,7 @@ import face1 from '../../assets/images/face-male-1.jpg'
 import face2 from '../../assets/images/face-male-2.jpg'
 import face3 from '../../assets/images/face-male-3.jpg'
 import face4 from '../../assets/images/face-male-4.jpg'
-import "../../story.css"
+
 
 
 export default {
