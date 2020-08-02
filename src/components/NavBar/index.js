@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import StyledNavBar, { StyledMenuItem, MenuIcon, MenuItems} from "./style";
 import {faCommentDots, faUsers, faFolder, faStickyNote, faEllipsisH, faCog} from "@fortawesome/free-solid-svg-icons"
 import Badge from "components/Badge";
