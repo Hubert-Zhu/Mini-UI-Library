@@ -11,4 +11,4 @@ export default {
     component: "<%= name %>"
 };
 
-export const Default = () => <<%= name %>>默认</<%= name %>>
+export const Default = () => <<%= name %>>Default</<%= name %>>
