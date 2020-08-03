@@ -11,7 +11,7 @@ function <%= name %>({children, ...rest}) {
     return (
         <Styled<%= name %> {...rest}>
             {children}
-        </Styled<%= name %> >
+        </Styled<%= name %>>
     )
 }
 
