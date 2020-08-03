@@ -5,7 +5,7 @@ const StyleSelect = styled.select`
     appearance: none;
     background-image: url(${CaretDown});
     background-repeat: no-repeat;
-    background-position: rightç center;
+    background-position: right center;
     background-color: transparent;
     border: none;
     padding-right: 14px;

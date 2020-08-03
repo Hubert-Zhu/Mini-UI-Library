@@ -7,7 +7,7 @@ function Select({children, ...rest}) {
     return (
         <StyledSelect {...rest}>
             {children}
-        </StyledSelect >
+        </StyledSelect>
     )
 }
 
