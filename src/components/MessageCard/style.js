@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import Text from "components/Text";
-import Paragraph from "components/Pragraph";
+import Paragraph from "components/Paragraph";
 import Badge from "components/Badge";
 import { card, activeBar } from "utils/mixins";
 import StyledAvatar from "components/Avatar/style";
