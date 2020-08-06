@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import StyledChatBubble from "./style"
+import StyledChatBubble, { Bubble, BubbleTip, Time, MessageText }from "./style"
 
 import { ReactComponent as BubbleTipIcon } from "assets/icon/bubbleTip.svg"
-import { MessageText } from "components/MessageCard/style"
 
 function ChatBubble({children, type, time, ...rest}) {
     return (
