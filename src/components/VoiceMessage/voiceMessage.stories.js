@@ -2,7 +2,7 @@ import React from "react";
 import VoiceMessage from ".";
 
 export default {
-    title: "VoiceMessage",
+    title: "UI Components/VoiceMessage",
     component: "VoiceMessage"
 };
 
