@@ -10,9 +10,10 @@ const Time = styled(Paragraph).attrs({ type: "secondary", size: "small" })`
 `;
 
 const BubbleTip = styled(Icon)`
-  position: "absolute";
+  position: absolute;
   bottom: -15%;
   left: 0;
+
   z-index: 5;
 `;
 
@@ -42,24 +43,24 @@ const typeVariants = {
       }
     }
 
-
     ${Time} {
-        text-align: right;
-        margin-left: 0;
-        margin-right: 24px; 
+      text-align: right;
+      margin-left: 0;
+      margin-right: 24px;
     }
 
-    ${MessageText}{
-        color: white; 
+    ${MessageText} {
+      color: white;
     }
   `,
 };
+
 const StyledChatBubble = styled.div`
   display: flex;
   flex-direction: column;
 
-    ${({ type }) => type && typeVariants[type]}
+  ${({ type }) => type && typeVariants[type]}
 `;
 
 export default StyledChatBubble;
-export { Bubble, BubbleTip, Time, MessageText }
+export { Bubble, BubbleTip, Time, MessageText };

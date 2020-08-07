@@ -6,4 +6,4 @@ export default {
     component: "VoiceMessage"
 };
 
-export const Default = () => <VoiceMessage>Default</VoiceMessage>
+export const Default = () => <VoiceMessage  time="01:25" />
