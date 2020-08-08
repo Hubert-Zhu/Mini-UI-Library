@@ -31,10 +31,13 @@ const Triangle = styled.div`
   ${({ visible }) => !visible && `display: none`};
 `;
 
-const Target = styled.div``;
+const Target = styled.div`
+  /* ???? 有一个bug必须这么解决 */
+  display: flex;
+`;
 
 const StyledPopover = styled.div`
-  dispaly: flex;
+  display: flex;
   justify-content: center;
   position: relative;
 `;

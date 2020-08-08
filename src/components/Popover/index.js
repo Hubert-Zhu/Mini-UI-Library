@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import StyledPopover, { Content, Triangle, Target } from "./style";
 
-function Popover({ children, content, offset = {}, onVisible, onHide, ...rest }) {
+function Popover({
+  children,
+  content,
+  offset = {},
+  onVisible,
+  onHide,
+  ...rest
+}) {
   const [visible, setVisible] = useState(false);
 
   const handleClick = () => {
@@ -17,7 +24,9 @@ function Popover({ children, content, offset = {}, onVisible, onHide, ...rest })
 
   return (
     <StyledPopover onClick={handleClick} {...rest}>
-      <Content offset={offset} visible={visible}>{content}</Content>
+      <Content offset={offset} visible={visible}>
+        {content}
+      </Content>
       <Triangle offset={offset} visible={visible} />
       <Target>{children}</Target>
     </StyledPopover>
@@ -26,8 +35,8 @@ function Popover({ children, content, offset = {}, onVisible, onHide, ...rest })
 
 Popover.propTypes = {
   children: PropTypes.any,
-  content: PropTypes,any,
-  offset: PropTypes.shape({ x: PropTypes.string, y:PropTypes.string})
+  content: PropTypes.any,
+  offset: PropTypes.shape({ x: PropTypes.string, y: PropTypes.string }),
   onVisible: PropTypes.func,
   onHide: PropTypes.func,
 };
