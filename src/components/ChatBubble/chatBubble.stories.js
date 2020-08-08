@@ -1,6 +1,7 @@
 import React from "react";
 import ChatBubble from ".";
 import VoiceMessage from "components/VoiceMessage"
+import Emoji from "components/Emoji";
 
 export default {
     title: "UI Components/ChatBubble",
@@ -10,7 +11,7 @@ export default {
 
 export const FromOthers = () => <ChatBubble time={"Yesterday 14:00pm"}>This is a Defualt Message</ChatBubble>
 
-export const Mine = () => <ChatBubble type="mine" time="Yesterday 14:00pm">This message was sent by myself</ChatBubble>
+export const Mine = () => <ChatBubble type="mine" time="Yesterday 14:00pm">This message was sent by myself<Emoji label="smile">😊</Emoji></ChatBubble>
 
 export const VoiceMessageType = () => <ChatBubble time="Yesterday 18:30px"><VoiceMessage time="1:24" /></ChatBubble>
 

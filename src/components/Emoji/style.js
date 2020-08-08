@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
-const StyledEmoji = styled.div``;
+const StyledEmoji = styled.span``;
 
 export default StyledEmoji

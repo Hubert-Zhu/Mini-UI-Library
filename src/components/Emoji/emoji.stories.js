@@ -2,8 +2,14 @@ import React from "react";
 import Emoji from ".";
 
 export default {
-    title: "Emoji",
+    title: "UI Components/Emoji",
     component: "Emoji"
 };
 
-export const Default = () => <Emoji>Default</Emoji>
+export const Default = () => (
+    <div>
+        <Emoji label="smile">😊</Emoji>
+        <Emoji label="todo">✅</Emoji>
+        <Emoji label="clock">⏰</Emoji>
+    </div>
+)
