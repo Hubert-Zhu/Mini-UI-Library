@@ -20,3 +20,6 @@ export const WithAffix = () => (
     suffix={<Icon icon={SmileIcon} color="#cccccc" />}
   />
 );
+
+export const InputTextWithLabel = () => <Input.Text label="name" />
+export const InputTextWithoutLabel = () => <Input.Text /> 

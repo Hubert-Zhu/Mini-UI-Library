@@ -13,3 +13,13 @@ export const Default = () => (
     <Option>rank by online friends</Option>
   </Select>
 );
+
+export const FormSelect = () => {
+  return (
+    <Select type="form">
+      <Option>ON</Option>
+      <Option>BC</Option>
+      <Option>...</Option>
+    </Select>
+  )
+}
