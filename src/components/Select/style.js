@@ -18,7 +18,7 @@ const StyleSelect = styled.select`
     font-size: ${({ theme }) => theme.normal};
     color: ${({ theme }) => theme.grayDark};
 
-    ${({ type }) => type && typeVariants[typec]};
+    ${({ type }) => type && typeVariants[type]};
 
     ::-ms-expand{
         display: none;
