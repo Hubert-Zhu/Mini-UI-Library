@@ -65,6 +65,8 @@ function PopoverContent(props) {
   );
 }
 
-Footer.propTypes = {};
+Footer.propTypes = {
+  children: PropTypes.any 
+};
 
 export default Footer;
