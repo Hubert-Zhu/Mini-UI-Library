@@ -36,6 +36,7 @@ const StyledButton = styled.button`
   &:hover {
     transform: scale(1.1);
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
   }
 `;
 
