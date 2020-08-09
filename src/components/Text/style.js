@@ -8,7 +8,7 @@ const typeVariants = {
     color: ${({ theme }) => theme.grayDark};
     opacity: 0.3;
   `,
-  primary: css`
+  danger: css`
     color: ${({ theme }) => theme.red};
   `,
 };
