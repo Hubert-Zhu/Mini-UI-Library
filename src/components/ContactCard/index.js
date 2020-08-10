@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import StyledContactCard from "./style"
+import StyledContactCard, { Name, Intro } from "./style"
+import face from "assets/images/face-male-1.jpg"
+import Avatar from "components/Avatar"
 
 
 function ContactCard({children, ...rest}) {
