@@ -18,7 +18,7 @@ const SelectGroup = styled.div`
   margin: 0 -4px;
 `;
 
-const styledIconInput = styled.div`
+const StyledIconInput = styled.div`
   display: grid;
   grid-template-columns: 38px 1fr;
   align-items: end;
@@ -34,4 +34,4 @@ const StyledEditProfile = styled.div`
 `;
 
 export default StyledEditProfile;
-export { GroupTitle, GenderAndRegion, SelectGroup, styledIconInput}
+export { GroupTitle, GenderAndRegion, SelectGroup, StyledIconInput }

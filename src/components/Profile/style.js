@@ -10,7 +10,7 @@ const SocialLinks = styled.div`
 
 const ContactSection = styled.section`
     display: grid;
-    row-gap: 19px;
+    row-gap: 18px;
 `
 
 const AlbumSection = styled.section``

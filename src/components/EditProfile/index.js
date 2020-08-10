@@ -5,7 +5,7 @@ import StyledEditProfile, {
   GenderAndRegion,
   SelectGroup,
   StyledIconInput,
-} from "./styled";
+} from "./style";
 import Profile from "components/Profile";
 import face from "assets/images/face-male-1.jpg";
 import Avatar from "components/Avatar";
@@ -22,9 +22,20 @@ import Option from "components/Option";
 import {
   faWeibo,
   faGithub,
-  faLinkdin,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Icon from "components/Icon";
+
+function IconInput({ icon, bgColor, ...rest }) {
+  return (
+    <div>
+      <StyledIconInput>
+        <Icon.Social icon={icon} bgColor={bgColor} />
+        <InputText {...rest} />
+      </StyledIconInput>
+    </div>
+  );
+}
 
 function EditProfile({ children, ...rest }) {
   const [showEdit, setShowEdit] = useState(false);
@@ -34,7 +45,7 @@ function EditProfile({ children, ...rest }) {
       <Profile
         onEdit={() => setShowEdit(true)}
         showEditBtn
-        ShowCloseIcon={false}
+        showCloseIcon={false}
       />
     );
   }
@@ -42,7 +53,7 @@ function EditProfile({ children, ...rest }) {
   return (
     <StyledEditProfile {...rest}>
       <Avatar
-        arc={face}
+        src={face}
         size="160px"
         css={`
           grid-area: 1 / 1 / 2 / 2;
@@ -53,13 +64,13 @@ function EditProfile({ children, ...rest }) {
       <Button
         size="52px"
         css={`
-          grid-area: 1/ 2 / 2/ 2;
+          grid-area: 1/ 1 / 3 / 2;
           z-index: 10;
           align-self: end;
           justify-self: end;
         `}
       >
-        <fontAwesomeIcon icon={faCheck} onClick={() => setShowEdit(false)} />
+        <FontAwesomeIcon icon={faCheck} onClick={() => setShowEdit(false)} />
       </Button>
       <GroupTitle>Personal Information</GroupTitle>
       <InputText label="Preferred name"></InputText>
@@ -90,18 +101,9 @@ function EditProfile({ children, ...rest }) {
 
       <GroupTitle>Soical Medias</GroupTitle>
       <IconInput icon={faWeibo} bgColor="#F06767" />
-      <IconInput icon={faGithub} bgColor="blakc" />
-      <IconInput icon={faLinkdin} bgColor="#2483C0" />
+      <IconInput icon={faGithub} bgColor="black" />
+      <IconInput icon={faLinkedin} bgColor="#2483C0" />
     </StyledEditProfile>
-  );
-}
-
-function IconInput({ icon, bgColor, ...rest }) {
-  return (
-    <StyledIconInput>
-      <Icon.Social icon={icon} bgColor={bgColor} />
-      <InputText {...rest} />
-    </StyledIconInput>
   );
 }
 
