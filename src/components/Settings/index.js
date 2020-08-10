@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import StyledSettings, {
   StyledSettingsItem,
   SettingItemControl,
+  StyledSettingsGroup
 } from "./style";
 import { ReactComponent as ArrowMenuRight } from "assets/icon/arrowMenuRight.svg";
 import Switch from "components/Switch";
@@ -11,8 +12,36 @@ import Seperator from "components/Seperator";
 import Icon from "components/Icon"
 
 function Settings({ children, ...rest }) {
-  return <StyledSettings {...rest}>{children}</StyledSettings>;
+  return (
+    <StyledSettings {...rest}>
+        <SettingsGroup groupName = "Privacy Setting">
+            <SettingsItem label={"Need Verfication Before Following Friends"} />
+            <SettingsItem label={"Suggestions For You"} description="According to your Friend List, system will suggest some friends to you"  />
+            <SettingsItem label={"Only can find me by phone number"} />
+        </SettingsGroup>
+        <SettingsGroup groupName = "Notification Setting">
+            <SettingsItem label={"New Message Notification"} /> 
+            <SettingsItem label={"Voice or Video Call Notification"} />
+            <SettingsItem label={"Show Notification Detail"} />
+            <SettingsItem label={"Voice"} />
+            <SettingsItem label={"Check Muted Friend List"} type="menu" />
+        </SettingsGroup>
+
+    </StyledSettings>)
 }
+
+function SettingsGroup({ groupName, children, ...rest }) {
+    return(
+        <StyledSettingsGroup>
+            <Paragraph size="xxlarge" style={{ paddingBottom:"24px"}}>
+                {groupName}
+            </Paragraph>
+            {children}
+        </StyledSettingsGroup>
+    )
+}
+
+
 
 export function SettingsItem({
   type = "switch",
