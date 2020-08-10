@@ -6,7 +6,9 @@ import StyledContactCard from "./style"
 function ContactCard({children, ...rest}) {
     return (
         <StyledContactCard {...rest}>
-            {children}
+            <Avatar src={face} status="online" />
+            <Name>Hubert</Name>
+            <Intro>I am Frontend developer</Intro>
         </StyledContactCard>
     )
 }

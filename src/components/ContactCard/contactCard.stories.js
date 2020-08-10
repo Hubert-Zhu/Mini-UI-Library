@@ -2,8 +2,8 @@ import React from "react";
 import ContactCard from ".";
 
 export default {
-    title: "ContactCard",
+    title: "UI Components/ContactCard",
     component: "ContactCard"
 };
 
-export const Default = () => <ContactCard>Default</ContactCard>
+export const Default = () => <ContactCard />
