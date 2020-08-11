@@ -10,29 +10,30 @@ function MessageList({ children, ...rest }) {
   return (
     <StyledMessageList {...rest}>
       <FilterList
-        options={["Sort by Latest Message", "Sort by Online Friends"]}
-        actionLabel="Start New Chat"
+        options={["Latest Message", "Online Friends"]}
+        actionLabel="New Chat"
       >
-      {[1, 2, 3, 4, 5, 6].map((_, index) => (
-        <MessageCard
-          key={index}
-          active={index === 3}
-          replied={index % 3 === 0}
-          avatarSrc={face1}
-          name="Hubert"
-          avatarStatus="online"
-          statusText="Online"
-          time="6 hours ago"
-          message="Hello World"
-          unreadCount={2}
-        />
-      ))}
+        <ChatList>
+          {[1, 2, 3, 4, 5, 6].map((_, index) => (
+            <MessageCard
+              key={index}
+              active={index === 3}
+              replied={index % 3 === 0}
+              avatarSrc={face1}
+              name="Hubert"
+              avatarStatus="online"
+              statusText="Online"
+              time="6 hrs ago"
+              message="Hello World"
+              unreadCount={2}
+            />
+          ))}
+        </ChatList>
       </FilterList>
       <ChatList />
     </StyledMessageList>
   );
 }
-
 
 MessageList.propTypes = {
   children: PropTypes.any,

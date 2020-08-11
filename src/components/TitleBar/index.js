@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StyledTitleBar, { Actions, Title } from "./style";
-import { DropdownItem } from "components/Dropdown/stylec"
+import { DropdownItem } from "components/Dropdown/style"
 import Dropdown from "components/Dropdown";
 
 import face from "assets/images/face-male-3.jpg";

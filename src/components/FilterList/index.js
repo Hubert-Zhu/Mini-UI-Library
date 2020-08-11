@@ -14,7 +14,7 @@ import { ReactComponent as Plus } from "assets/icon/plus.svg";
 function FilterList({
   children,
   options,
-  filterLabel = "Sort List",
+  filterLabel = "Sort by",
   actionLabel,
   ...rest
 }) {

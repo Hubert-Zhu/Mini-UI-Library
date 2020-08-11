@@ -1,12 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ChatAPP from "./components/ChatAPP/index.js";
+import { ThemeProvider } from "styled-components";
+import theme from "theme";
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <ThemeProvider theme={theme}>
+      <ChatAPP />
+    </ThemeProvider>
   );
 }
 

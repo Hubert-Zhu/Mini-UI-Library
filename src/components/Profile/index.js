@@ -49,7 +49,6 @@ function Profile({
         `}
         src={face}
         size="160px"
-        status="online"
         statusIconSize="25px"
       />
 
@@ -96,7 +95,7 @@ function Profile({
           margin-bottom: 26px;
         `}
       >
-        Frontend Web Developer / Undergraduate Student
+        Frontend Web Developer
       </Paragraph>
       <SocialLinks>
         <Icon.Social icon={faWeibo} bgColor="#F06767" />
@@ -119,7 +118,7 @@ function Profile({
       <ContactSection>
         <Description label="Phone"> 778 888 8888</Description>
         <Description label="E-mail"> xxxxx@gmail.com</Description>
-        <Description label="Github"> https://github.com/Hubert-Zhu</Description>
+        <Description label="Github"> Hubert-Zhu</Description>
       </ContactSection>
       <Seperator
         css={`
