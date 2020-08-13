@@ -14,10 +14,10 @@ import Paragraph from "components/Paragraph";
 import Text from "components/Text";
 import Icon from "components/Icon";
 
-function TitleBar({ children, ...rest }) {
+function TitleBar({ onAvatarClick, onVideoClicked,children, ...rest }) {
   return (
     <StyledTitleBar {...rest}>
-      <Avatar status={"offline"} src={face} />
+      <Avatar onClick={onAvatarClick} status={"offline"} src={face} />
       <Title>
         <Paragraph size="large">Ray</Paragraph>
         <Paragraph type="secondary">
@@ -26,7 +26,7 @@ function TitleBar({ children, ...rest }) {
         </Paragraph>
       </Title>
       <Actions>
-        <Icon opacity={0.3} icon={Call} />
+        <Icon opacity={0.3} icon={Call} onClick={onVideoClicked} />
         <Icon opacity={0.3} icon={Camera} />
         <Dropdown
           content={

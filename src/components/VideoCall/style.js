@@ -6,7 +6,7 @@ import { card } from "utils/mixins";
 const Actions = styled.div`
   grid-area: actions/ title;
   align-self: end;
-  jsutify-self: center;
+  justify-self: center;
 
   display: grid;
   grid-template-columns: 90px 90px 90px;
@@ -60,7 +60,7 @@ const StyledVideoCall = styled.div`
   padding: 20px;
   padding-bottom: 40px;
   background-image: url(${({ src }) => src});
-  backrgound-size: cover;
+  background-size: cover;
   background-position: center;
 
   display: grid;

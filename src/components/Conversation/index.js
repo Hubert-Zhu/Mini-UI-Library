@@ -9,10 +9,10 @@ import Footer from 'components/Footer'
 
 
 
-function Conversation({children, ...rest}) {
+function Conversation({children, onVideoClicked, onAvatarClick, ...rest}) {
     return (
         <StyledConversation {...rest}>
-            <TitleBar />
+            <TitleBar onVideoClicked={onVideoClicked} onAvatarClick={onAvatarClick}/>
             <Conversations>
                 <ChatBubble time="Yesterday 14:00">Hi, Hubert. How are u?</ChatBubble>
                 <MyChatBubble time="Yesterday 14:20">umm...not bad<Emoji label="smile">😄</Emoji></MyChatBubble>
