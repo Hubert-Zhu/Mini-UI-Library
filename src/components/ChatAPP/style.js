@@ -2,14 +2,25 @@ import styled, { css } from "styled-components";
 
 const Nav = styled.nav`
   flex-shrink: 0;
+
+  position: relative;
+  z-index: 100;
 `;
 
 const Sidebar = styled.aside`
   max-width: 448px;
-  min-width: 372cpx;
+  min-width: 372px;
   height: 100vh;
   flex: 1;
   background: ${({ theme }) => theme.grediantGray};
+
+  position: relative;
+  z-index: 50;
+  & > div {
+    will-change: transform. opacity;
+    position: absolute;
+    width: 100%;
+  }
 `;
 
 const Content = styled.main`
