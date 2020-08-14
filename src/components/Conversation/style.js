@@ -1,7 +1,8 @@
-import styled from "styled-components"
-import ChatBubble from "components/ChatBubble"
+import styled from "styled-components";
+import ChatBubble from "components/ChatBubble";
+import { animated } from "react-spring";
 
-const Conversations = styled.div`
+const Conversations = styled(animated.div)`
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
@@ -9,15 +10,14 @@ const Conversations = styled.div`
     width: 100%;
     overflow-y: auto;
     flex: 1;
-
     & > * {
         margin: 10px 0;
     }
-`
+`;
 
-const MyChatBubble = styled(ChatBubble).attrs({ type:"mine" })`
+const MyChatBubble = styled(ChatBubble).attrs({ type: "mine" })`
     align-self: flex-end;
-`
+`;
 
 const StyledConversation = styled.div`
     display: flex;
@@ -30,5 +30,5 @@ const StyledConversation = styled.div`
     }
 `;
 
-export default StyledConversation
-export { Conversations, MyChatBubble }
+export default StyledConversation;
+export { Conversations, MyChatBubble };

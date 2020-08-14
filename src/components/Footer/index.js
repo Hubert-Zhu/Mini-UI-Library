@@ -13,60 +13,62 @@ import Icon from "components/Icon";
 import Button from "components/Button";
 import { useTheme } from "styled-components";
 
-function Footer({ children, ...rest }) {
-  const [emojiIconActive, setEmojiIconActive] = useState(false);
-  const theme = useTheme();
-  return (
-    <StyledFooter {...rest}>
-      <Input
-        placeholder="Type a message, @name"
-        prefix={<Icon icon={ClipIcon} />}
-        suffix={
-          <IconContainer>
-            <Popover
-              content={<PopoverContent />}
-              offset={{ x: "-25%" }}
-              onVisible={() => setEmojiIconActive(true)}
-              onHide={() => setEmojiIconActive(false)}
-            >
-              <Icon
-                icon={SmileIcon}
-                color={emojiIconActive ? undefined : theme.gray3}
-              />
-            </Popover>
+function Footer({ animeProps, style, children, ...rest }) {
+    const [emojiIconActive, setEmojiIconActive] = useState(false);
+    const theme = useTheme();
+    return (
+        <StyledFooter style={{ ...style, ...animeProps }} {...rest}>
+            <Input
+                placeholder="Type a message, @name"
+                prefix={<Icon icon={ClipIcon} />}
+                suffix={
+                    <IconContainer>
+                        <Popover
+                            content={<PopoverContent />}
+                            offset={{ x: "-25%" }}
+                            onVisible={() => setEmojiIconActive(true)}
+                            onHide={() => setEmojiIconActive(false)}
+                        >
+                            <Icon
+                                icon={SmileIcon}
+                                color={
+                                    emojiIconActive ? undefined : theme.gray3
+                                }
+                            />
+                        </Popover>
 
-            <Icon icon={MicrophoneIcon} />
+                        <Icon icon={MicrophoneIcon} />
 
-            <Button size="52px">
-              <Icon
-                icon={PlaneIcon}
-                color="white"
-                style={{ transform: "translateX(-2px)" }}
-              />
-            </Button>
-          </IconContainer>
-        }
-      />
-    </StyledFooter>
-  );
+                        <Button size="52px">
+                            <Icon
+                                icon={PlaneIcon}
+                                color="white"
+                                style={{ transform: "translateX(-2px)" }}
+                            />
+                        </Button>
+                    </IconContainer>
+                }
+            />
+        </StyledFooter>
+    );
 }
 
 function PopoverContent(props) {
-  return (
-    <StyledPopoverContent>
-      <Emoji label="smile">😊</Emoji>
-      <Emoji label="grinning">😂</Emoji>
-      <Emoji label="thumbup">👍</Emoji>
-      <Emoji label="ok">👌</Emoji>
-      <Emoji label="handsputtogether">🙏</Emoji>
-      <Emoji label="flexbdicep">💪</Emoji>
-      <Icon icon={OptionsIcon} style={{ marginLeft: "24px" }} />
-    </StyledPopoverContent>
-  );
+    return (
+        <StyledPopoverContent>
+            <Emoji label="smile">😊</Emoji>
+            <Emoji label="grinning">😂</Emoji>
+            <Emoji label="thumbup">👍</Emoji>
+            <Emoji label="ok">👌</Emoji>
+            <Emoji label="handsputtogether">🙏</Emoji>
+            <Emoji label="flexbdicep">💪</Emoji>
+            <Icon icon={OptionsIcon} style={{ marginLeft: "24px" }} />
+        </StyledPopoverContent>
+    );
 }
 
 Footer.propTypes = {
-  children: PropTypes.any 
+    children: PropTypes.any,
 };
 
 export default Footer;
