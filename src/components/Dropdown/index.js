@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import StyledDropdown, { DropdownContainer, DropdownItem } from "./style";
+import StyledDropdown, { DropdownContainer } from "./style";
 
 function Dropdown({ children, content, align = "right", ...rest }) {
   const [visible, setVisible] = useState(false);

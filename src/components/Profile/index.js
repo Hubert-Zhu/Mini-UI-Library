@@ -129,7 +129,7 @@ function Profile({
       <AlbumSection>
         <AlbumTitle>
           <Text type="secondary">Photo Album</Text>
-          <a style={{ cursor: "pointer" }}>Check Other Photo</a>
+          <a href="/#" style={{ cursor: "pointer" }}>Check Other Photo</a>
         </AlbumTitle>
         <Album>
           <Photo src={photo1} />

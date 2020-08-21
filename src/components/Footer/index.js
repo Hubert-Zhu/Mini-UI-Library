@@ -53,6 +53,8 @@ function Footer({ animeProps, style, children, ...rest }) {
     );
 }
 
+/* eslint-disable */
+// I used span, this is a unfixed  eslint bug caused by Styled-Component 
 function PopoverContent(props) {
     return (
         <StyledPopoverContent>
@@ -66,6 +68,7 @@ function PopoverContent(props) {
         </StyledPopoverContent>
     );
 }
+/* eslint-disable */
 
 Footer.propTypes = {
     children: PropTypes.any,

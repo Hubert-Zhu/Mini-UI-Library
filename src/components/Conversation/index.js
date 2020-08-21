@@ -8,6 +8,7 @@ import Emoji from "components/Emoji";
 import Footer from "components/Footer";
 import { useSpring } from "react-spring";
 
+/* eslint-disable */
 function Conversation({ children, onVideoClicked, onAvatarClick, ...rest }) {
   const tBarAnimeProps = useSpring({
     opacity: 1,
@@ -54,6 +55,8 @@ function Conversation({ children, onVideoClicked, onAvatarClick, ...rest }) {
     </StyledConversation>
   );
 }
+
+/* eslint-disable */
 
 Conversation.propTypes = {
   children: PropTypes.any,

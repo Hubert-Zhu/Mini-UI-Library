@@ -23,7 +23,7 @@ function ChatAPP({ children, ...rest }) {
 
   const getFirstLevelPath = (location) => location.pathname.split("/")[1];
 
-  const transitions = useTransition(location, null, {
+  const transitions = useTransition(location, getFirstLevelPath, {
     from: { opacity: 0, transform: "translate3d(-100px, 0, 0)" },
     enter: { opacity: 1, transform: "translate3d(0, 0, 0)" },
     leave: { opacity: 0, transform: "translate3d(-100px, 0, 1)" },

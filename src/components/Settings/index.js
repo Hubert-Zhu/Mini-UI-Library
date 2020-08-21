@@ -11,7 +11,6 @@ import Paragraph from "components/Paragraph";
 import Seperator from "components/Seperator";
 import Icon from "components/Icon";
 import { Link } from "react-router-dom";
-import { css } from "styled-components/macro";
 import { useSpring, animated } from "react-spring";
 
 function Settings({ children, ...rest }) {

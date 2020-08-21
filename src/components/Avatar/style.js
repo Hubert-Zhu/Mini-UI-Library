@@ -1,4 +1,4 @@
-import styled, { css, ThemeContext } from 'styled-components'
+import styled, { css } from 'styled-components'
 import { circle } from 'utils/mixins'
 
 const circleMixinFunc = (color, size = "8px") => css`
