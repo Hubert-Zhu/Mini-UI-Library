@@ -39,7 +39,7 @@ function Conversation({ children, onVideoClicked, onAvatarClick, ...rest }) {
         animeProps={tBarAnimeProps}
       />
       <Conversations style={convsAnimeProps}>
-        <ChatBubble time="Yesterday 14:00">Hi, Hubert. How are u?</ChatBubble>
+        <ChatBubble time="Yesterday 14:00">Hi. How are u?</ChatBubble>
         <MyChatBubble time="Yesterday 14:20">
           umm...not bad<Emoji label="smile">😄</Emoji>
         </MyChatBubble>

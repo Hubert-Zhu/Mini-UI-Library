@@ -9,7 +9,7 @@ function ContactCard({children, ...rest}) {
     return (
         <StyledContactCard {...rest}>
             <Avatar src={face} status="online" />
-            <Name>Hubert</Name>
+            <Name>???</Name>
             <Intro>I am Frontend developer</Intro>
         </StyledContactCard>
     )

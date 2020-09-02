@@ -26,7 +26,7 @@ function TitleBar({
         <StyledTitleBar style={{ ...style, ...animeProps }} {...rest}>
             <Avatar onClick={onAvatarClick} status={"offline"} src={face} />
             <Title>
-                <Paragraph size="large">Ray</Paragraph>
+                <Paragraph size="large">Name</Paragraph>
                 <Paragraph type="secondary">
                     <Text>Offline</Text>
                     <Text> - Three hours ago</Text>
