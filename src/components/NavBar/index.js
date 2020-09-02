@@ -77,11 +77,9 @@ function NavBarDemo({ ...rest }) {
 function MenuItemDemo({ icon, active, showBadge, ...rest }) {
   return (
     <StyledMenuItem active={active} {...rest}>
-      <a href="#">
         <Badge show={showBadge}>
           <MenuIcon active={active} icon={icon} />
         </Badge>
-      </a>
     </StyledMenuItem>
   );
 }
