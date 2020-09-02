@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar, { MenuItem } from ".";
+import { NavBarDemo, MenuItemDemo } from ".";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import "styled-components/macro";
 
@@ -8,7 +8,7 @@ export default {
   component: "NavBar",
 };
 
-export const Default = () => <NavBar />
+export const Default = () => <NavBarDemo />
 
 export const Menu = () => {
   return (
@@ -18,7 +18,7 @@ export const Menu = () => {
         width: 100px;
       `}
     >
-      <MenuItem showBadge active icon={faCommentDots} />
+      <MenuItemDemo showBadge active icon={faCommentDots} />
     </div>
   );
 };

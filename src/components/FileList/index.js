@@ -10,7 +10,7 @@ function FileList({ children, ...rest }) {
   const trailAnimes = useStaggeredList(10);
   return (
     <StyledFileList {...rest}>
-      <FilterList options={["Sort by File Name", "Sort by Date Added"]}>
+      <FilterList options={["Alphabet", "Date Added"]}>
         <Files>
           {new Array(10).fill(0).map((item, index) => (
             <animated.div key={index} style={trailAnimes[index]}>

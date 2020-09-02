@@ -53,7 +53,41 @@ function MenuItem({ to, icon, showBadge, ...rest }) {
   );
 }
 
+function NavBarDemo({ ...rest }) {
+  return (
+    <StyledNavBar {...rest}>
+      <Avatar src={profileImage} status="online" />
+      <MenuItems>
+        <MenuItemDemo showBadge active icon={faCommentDots} />
+        <MenuItemDemo icon={faUsers} />
+        <MenuItemDemo icon={faFolder} />
+        <MenuItemDemo icon={faStickyNote} />
+        <MenuItemDemo icon={faEllipsisH} />
+        <MenuItemDemo
+          icon={faCog}
+          css={`
+            align-self: end;
+          `}
+        />
+      </MenuItems>
+    </StyledNavBar>
+  );
+}
+
+function MenuItemDemo({ icon, active, showBadge, ...rest }) {
+  return (
+    <StyledMenuItem active={active} {...rest}>
+      <a href="#">
+        <Badge show={showBadge}>
+          <MenuIcon active={active} icon={icon} />
+        </Badge>
+      </a>
+    </StyledMenuItem>
+  );
+}
+
+
 NavBar.propTypes = {};
 
 export default NavBar;
-export { MenuItem };
+export { MenuItem, NavBarDemo, MenuItemDemo };

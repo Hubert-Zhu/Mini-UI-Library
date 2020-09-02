@@ -11,8 +11,8 @@ function ContactList({ children, ...rest }) {
   return (
     <StyledContactList {...rest}>
       <FilterList
-        options={["Sort by Name Alphabet", "Sort by Following Record"]}
-        actionLabel="Follow New Friends"
+        options={["Alphabet", "..."]}
+        actionLabel="New Friend"
       >
         <Contacts>
           {new Array(10).fill(0).map((item, index) => (

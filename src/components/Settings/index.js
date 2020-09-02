@@ -60,6 +60,45 @@ function Settings({ children, ...rest }) {
     );
 }
 
+function SettingsDemo({ children, ...rest }) {
+    const animeProps = useSpring({
+        transform: "translate3d(0px,0px,0px)",
+        opacity: 1,
+        from: { transform: "translate3d(100px, 0px, 0px)", opacity: 0 },
+        config: {
+            tension: 140,
+        },
+        delay: 300,
+    });
+
+    return (
+        <StyledSettings {...rest}>
+            <animated.div style={animeProps}>
+                <SettingsGroup groupName="Privacy Setting">
+                    <SettingsItem
+                        label={"Need Verfication Before Following Friends"}
+                    />
+                    <SettingsItem
+                        label={"Suggestions For You"}
+                        description="According to your Friend List, system will suggest some friends to you"
+                    />
+                    <SettingsItem label={"Only can find me by phone number"} />
+                </SettingsGroup>
+                <SettingsGroup groupName="Notification Setting">
+                    <SettingsItem label={"New Message Notification"} />
+                    <SettingsItem label={"Voice or Video Call Notification"} />
+                    <SettingsItem label={"Show Notification Detail"} />
+                    <SettingsItem label={"Voice"} />
+                        <SettingsItem
+                            label={"Check Muted Friend List"}
+                            type="menu"
+                        />
+                    </SettingsGroup>
+            </animated.div>
+        </StyledSettings>
+    );
+}
+
 function SettingsGroup({ groupName, children, ...rest }) {
     return (
         <StyledSettingsGroup>
@@ -105,3 +144,4 @@ Settings.propTypes = {
 };
 
 export default Settings;
+export { SettingsDemo };

@@ -1,12 +1,12 @@
 import React from "react";
-import Settings, {SettingsItem}  from ".";
+import Settings, {SettingsItem, SettingsDemo}  from ".";
 
 export default {
     title: "Page Components/Setting",
     component: "Setting"
 };
 
-export const Default = () => <Settings>Default</Settings>
+export const Default = () => <SettingsDemo>Default</SettingsDemo>
 
 export const WithoutDescription = () => ( <SettingsItem label="This is a Setting without Description" /> )
 

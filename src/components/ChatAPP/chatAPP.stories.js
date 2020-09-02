@@ -1,9 +1,9 @@
-import React from "react";
-import ChatAPP from ".";
+// import React from "react";
+// import ChatAPP from ".";
 
-export default {
-    title: "ChatAPP",
-    component: "ChatAPP"
-};
+// export default {
+//     title: "ChatAPP",
+//     component: "ChatAPP"
+// };
 
-export const Default = () => <ChatAPP>Default</ChatAPP>
+// export const Default = () => <ChatAPP>Default</ChatAPP>
